@@ -514,10 +514,10 @@
                 </Property>
                 <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
                   <Table columnCount="4" rowCount="4">
-                    <Column editable="true" title="Client Name" type="java.lang.String"/>
-                    <Column editable="true" title="Order Id" type="java.lang.Long"/>
+                    <Column editable="true" title="Id Commande" type="java.lang.String"/>
+                    <Column editable="true" title="Commande Date" type="java.lang.String"/>
                     <Column editable="true" title="Total Price" type="java.lang.Float"/>
-                    <Column editable="true" title="Address" type="java.lang.String"/>
+                    <Column editable="true" title="State" type="java.lang.String"/>
                   </Table>
                 </Property>
                 <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
@@ -630,6 +630,9 @@
                 </Property>
                 <Property name="text" type="java.lang.String" value="    View order products"/>
               </Properties>
+              <Events>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jLabel28MouseClicked"/>
+              </Events>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                   <AbsoluteConstraints x="10" y="0" width="230" height="45"/>
@@ -683,6 +686,9 @@
                 </Property>
                 <Property name="text" type="java.lang.String" value="Confirm selected order"/>
               </Properties>
+              <Events>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jLabel29MouseClicked"/>
+              </Events>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                   <AbsoluteConstraints x="10" y="0" width="230" height="45"/>
