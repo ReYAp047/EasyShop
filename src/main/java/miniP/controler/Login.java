@@ -39,5 +39,35 @@ public class Login {
          
         
     }
+    
+       public static boolean LogD(String log,String ps) throws ClassNotFoundException, SQLException{
+        Connection con1;
+        PreparedStatement select;
+         File lien=null;
+         String lienFichier ="";
+         
+         Class.forName("com.mysql.cj.jdbc.Driver");
+         
+         String url = "jdbc:mysql://localhost:3306/ecommerce?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC"; 
+            String username = "root";
+            String passw = "";
+            con1 = DriverManager.getConnection(url, username, passw);
+            
+            select = con1.prepareStatement("select * from dealer where loginV=? and passwordV=?");
+            select.setString(1, log);
+            select.setString(2, ps);
+            ResultSet rs =select.executeQuery();
+            
+                boolean b=false;
+                rs.next();
+                if(rs.isFirst())
+                    b= true;
+                System.out.println(b);
+                return b;
+          
+               
+         
+        
+    }
          
 }

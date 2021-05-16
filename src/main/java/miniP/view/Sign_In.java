@@ -9,6 +9,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.JOptionPane;
 import miniP.controler.Login;
 import miniP.model.globalUserLogin;
 
@@ -159,14 +160,31 @@ public class Sign_In extends javax.swing.JFrame {
     globalUserLogin.userLogin=login;
     if(jCheckBox1.isSelected())
     {
-        
+                       try {
+            if(Login.LogD(login,pass)==true){
+             
+            Sign_In si = new Sign_In();
+            Product_Managment bp = new Product_Managment();
+            JOptionPane.showMessageDialog(this,"You are logged in as Dealer, Welcomme Sir!");
+            si.setVisible(false);
+            bp.setVisible(true);
+            dispose();
+            }
+            else{
+                String msg="Vérifier vos données";
+                labverifier.setText(msg);
+            }} catch (ClassNotFoundException ex) {
+            Logger.getLogger(Sign_In.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (SQLException ex) {
+            Logger.getLogger(Sign_In.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }else{
                try {
             if(Login.Log(login,pass)==true){
              
             Sign_In si = new Sign_In();
             Browse_Product bp = new Browse_Product();
-            
+            JOptionPane.showMessageDialog(this,"Welcomme Sir!");
             si.setVisible(false);
             bp.setVisible(true);
             dispose();
