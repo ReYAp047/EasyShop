@@ -100,6 +100,8 @@ public class Order_Managment_Client extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(61, 227, -1, -1));
+
+        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\mefta\\Documents\\NetBeansProjects\\eCommerceProjet\\eCommerce\\src\\main\\java\\View\\Iconfit\\logo.png")); // NOI18N
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(21, 26, -1, -1));
 
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -109,6 +111,8 @@ public class Order_Managment_Client extends javax.swing.JFrame {
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Order management");
         jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(62, 297, -1, -1));
+
+        jLabel6.setIcon(new javax.swing.ImageIcon("C:\\Users\\mefta\\Documents\\NetBeansProjects\\eCommerceProjet\\eCommerce\\src\\main\\java\\View\\Iconfit\\menu3.png")); // NOI18N
         jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 290, -1, -1));
 
         jLabel7.setFont(new java.awt.Font("Lato Hairline", 0, 22)); // NOI18N
@@ -120,6 +124,8 @@ public class Order_Managment_Client extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(62, 367, -1, -1));
+
+        jLabel8.setIcon(new javax.swing.ImageIcon("C:\\Users\\mefta\\Documents\\NetBeansProjects\\eCommerceProjet\\eCommerce\\src\\main\\java\\View\\Iconfit\\menu4.png")); // NOI18N
         jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 360, -1, -1));
 
         jLabel9.setFont(new java.awt.Font("Lato Hairline", 0, 22)); // NOI18N
@@ -131,6 +137,8 @@ public class Order_Managment_Client extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(62, 495, -1, -1));
+
+        jLabel10.setIcon(new javax.swing.ImageIcon("C:\\Users\\mefta\\Documents\\NetBeansProjects\\eCommerceProjet\\eCommerce\\src\\main\\java\\View\\Iconfit\\menu5.png")); // NOI18N
         jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 488, -1, -1));
 
         jLabel11.setFont(new java.awt.Font("Lato Hairline", 0, 22)); // NOI18N
@@ -142,6 +150,8 @@ public class Order_Managment_Client extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(62, 558, -1, -1));
+
+        jLabel12.setIcon(new javax.swing.ImageIcon("C:\\Users\\mefta\\Documents\\NetBeansProjects\\eCommerceProjet\\eCommerce\\src\\main\\java\\View\\Iconfit\\menu6.png")); // NOI18N
         jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 551, -1, -1));
 
         jLabel13.setFont(new java.awt.Font("Lato Hairline", 0, 22)); // NOI18N
@@ -153,6 +163,8 @@ public class Order_Managment_Client extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(62, 157, -1, -1));
+
+        jLabel14.setIcon(new javax.swing.ImageIcon("C:\\Users\\mefta\\Documents\\NetBeansProjects\\eCommerceProjet\\eCommerce\\src\\main\\java\\View\\Iconfit\\menu1.png")); // NOI18N
         jPanel1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 150, -1, -1));
 
         jLabel15.setFont(new java.awt.Font("Palatino Linotype", 1, 25)); // NOI18N
@@ -164,6 +176,8 @@ public class Order_Managment_Client extends javax.swing.JFrame {
 
         jPanel9.setBackground(new java.awt.Color(105, 149, 253));
         jPanel9.setOpaque(false);
+
+        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\mefta\\Documents\\NetBeansProjects\\eCommerceProjet\\eCommerce\\src\\main\\java\\View\\Iconfit\\menu2.png")); // NOI18N
 
         javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
         jPanel9.setLayout(jPanel9Layout);
@@ -283,10 +297,12 @@ public class Order_Managment_Client extends javax.swing.JFrame {
 
         jLabel1.setBackground(new java.awt.Color(0, 0, 0));
         jLabel1.setFont(new java.awt.Font("Raleway", 0, 15)); // NOI18N
-        jLabel1.setText("by EASY Team");
+        jLabel1.setText(" by EASY Team");
         jLabel1.setAlignmentX(114.0F);
         jLabel1.setAlignmentY(50.0F);
         jPanel3.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 30, 110, -1));
+
+        jLabel16.setIcon(new javax.swing.ImageIcon("C:\\Users\\mefta\\Documents\\NetBeansProjects\\eCommerceProjet\\eCommerce\\src\\main\\java\\View\\Iconfit\\heart.png")); // NOI18N
         jPanel3.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 30, 30, 19));
 
         jPanel4.setBackground(new java.awt.Color(68, 68, 68));
