@@ -77,10 +77,8 @@ public class ShoppingCartManagement extends javax.swing.JFrame {
     private void initComponents() {
 
         LeftMenu = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
-        jLabel3 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
@@ -93,6 +91,8 @@ public class ShoppingCartManagement extends javax.swing.JFrame {
         jLabel14 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
         jPanel7 = new javax.swing.JPanel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
         RightMenu = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
@@ -125,11 +125,7 @@ public class ShoppingCartManagement extends javax.swing.JFrame {
         LeftMenu.setMinimumSize(new java.awt.Dimension(340, 665));
         LeftMenu.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel2.setFont(new java.awt.Font("Lato Hairline", 0, 22)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setText("Shopping cart management");
-        LeftMenu.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 230, -1, -1));
-
+        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\mefta\\Documents\\NetBeansProjects\\eCommerceProjet\\eCommerce\\src\\main\\java\\View\\Iconfit\\logo.png")); // NOI18N
         jLabel4.setLabelFor(LeftMenu);
         LeftMenu.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(21, 26, -1, -1));
 
@@ -146,9 +142,6 @@ public class ShoppingCartManagement extends javax.swing.JFrame {
 
         LeftMenu.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(56, 104, -1, -1));
 
-        jLabel3.setLabelFor(LeftMenu);
-        LeftMenu.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 220, -1, -1));
-
         jLabel5.setFont(new java.awt.Font("Lato Hairline", 0, 22)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Order management");
@@ -159,6 +152,7 @@ public class ShoppingCartManagement extends javax.swing.JFrame {
         });
         LeftMenu.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 300, -1, -1));
 
+        jLabel6.setIcon(new javax.swing.ImageIcon("C:\\Users\\mefta\\Documents\\NetBeansProjects\\eCommerceProjet\\eCommerce\\src\\main\\java\\View\\Iconfit\\menu3.png")); // NOI18N
         jLabel6.setLabelFor(LeftMenu);
         LeftMenu.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 290, -1, -1));
 
@@ -172,6 +166,7 @@ public class ShoppingCartManagement extends javax.swing.JFrame {
         });
         LeftMenu.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 360, -1, -1));
 
+        jLabel8.setIcon(new javax.swing.ImageIcon("C:\\Users\\mefta\\Documents\\NetBeansProjects\\eCommerceProjet\\eCommerce\\src\\main\\java\\View\\Iconfit\\menu4.png")); // NOI18N
         jLabel8.setLabelFor(LeftMenu);
         LeftMenu.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 360, -1, -1));
 
@@ -183,10 +178,11 @@ public class ShoppingCartManagement extends javax.swing.JFrame {
                 jLabel9MouseClicked(evt);
             }
         });
-        LeftMenu.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 480, -1, -1));
+        LeftMenu.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 480, -1, -1));
 
+        jLabel10.setIcon(new javax.swing.ImageIcon("C:\\Users\\mefta\\Documents\\NetBeansProjects\\eCommerceProjet\\eCommerce\\src\\main\\java\\View\\Iconfit\\menu5.png")); // NOI18N
         jLabel10.setLabelFor(LeftMenu);
-        LeftMenu.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 435, -1, -1));
+        LeftMenu.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 470, -1, -1));
 
         jLabel11.setFont(new java.awt.Font("Lato Hairline", 0, 22)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(255, 255, 255));
@@ -196,10 +192,11 @@ public class ShoppingCartManagement extends javax.swing.JFrame {
                 jLabel11MouseClicked(evt);
             }
         });
-        LeftMenu.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 530, -1, -1));
+        LeftMenu.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 530, -1, -1));
 
+        jLabel12.setIcon(new javax.swing.ImageIcon("C:\\Users\\mefta\\Documents\\NetBeansProjects\\eCommerceProjet\\eCommerce\\src\\main\\java\\View\\Iconfit\\menu6.png")); // NOI18N
         jLabel12.setLabelFor(LeftMenu);
-        LeftMenu.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 513, -1, -1));
+        LeftMenu.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 530, -1, -1));
 
         jLabel13.setFont(new java.awt.Font("Lato Hairline", 0, 22)); // NOI18N
         jLabel13.setForeground(new java.awt.Color(255, 255, 255));
@@ -211,8 +208,9 @@ public class ShoppingCartManagement extends javax.swing.JFrame {
         });
         LeftMenu.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 170, -1, -1));
 
+        jLabel14.setIcon(new javax.swing.ImageIcon("C:\\Users\\mefta\\Documents\\NetBeansProjects\\eCommerceProjet\\eCommerce\\src\\main\\java\\View\\Iconfit\\menu1.png")); // NOI18N
         jLabel14.setLabelFor(LeftMenu);
-        LeftMenu.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 150, -1, -1));
+        LeftMenu.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 160, -1, -1));
 
         jLabel15.setFont(new java.awt.Font("Palatino Linotype", 1, 25)); // NOI18N
         jLabel15.setForeground(new java.awt.Color(255, 255, 255));
@@ -223,15 +221,32 @@ public class ShoppingCartManagement extends javax.swing.JFrame {
 
         jPanel7.setBackground(new java.awt.Color(105, 149, 253));
 
+        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\mefta\\Documents\\NetBeansProjects\\eCommerceProjet\\eCommerce\\src\\main\\java\\View\\Iconfit\\menu2.png")); // NOI18N
+        jLabel3.setLabelFor(LeftMenu);
+
+        jLabel2.setFont(new java.awt.Font("Lato Hairline", 0, 22)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setText("Shopping cart management");
+
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
         jPanel7.setLayout(jPanel7Layout);
         jPanel7Layout.setHorizontalGroup(
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 320, Short.MAX_VALUE)
+            .addGroup(jPanel7Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel2)
+                .addContainerGap())
         );
         jPanel7Layout.setVerticalGroup(
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 70, Short.MAX_VALUE)
+            .addGroup(jPanel7Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel2)
+                    .addComponent(jLabel3))
+                .addContainerGap(18, Short.MAX_VALUE))
         );
 
         LeftMenu.add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 210, 320, 70));
@@ -251,6 +266,7 @@ public class ShoppingCartManagement extends javax.swing.JFrame {
         jLabel1.setAlignmentY(50.0F);
         RightMenu.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 30, 110, -1));
 
+        jLabel16.setIcon(new javax.swing.ImageIcon("C:\\Users\\mefta\\Documents\\NetBeansProjects\\eCommerceProjet\\eCommerce\\src\\main\\java\\View\\Iconfit\\heart.png")); // NOI18N
         jLabel16.setLabelFor(RightMenu);
         RightMenu.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 30, 30, 19));
 
@@ -275,7 +291,7 @@ public class ShoppingCartManagement extends javax.swing.JFrame {
         jLabel20.setText("Made with");
         jLabel20.setAlignmentX(114.0F);
         jLabel20.setAlignmentY(50.0F);
-        RightMenu.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 30, 70, -1));
+        RightMenu.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, 80, -1));
 
         ScmTable.setFont(new java.awt.Font("Raleway", 0, 15)); // NOI18N
         ScmTable.setModel(new javax.swing.table.DefaultTableModel(
@@ -328,6 +344,7 @@ public class ShoppingCartManagement extends javax.swing.JFrame {
 
         Validate.setFont(new java.awt.Font("Raleway", 1, 15)); // NOI18N
         Validate.setForeground(new java.awt.Color(255, 255, 255));
+        Validate.setIcon(new javax.swing.ImageIcon("C:\\Users\\mefta\\Documents\\NetBeansProjects\\eCommerceProjet\\eCommerce\\src\\main\\java\\View\\Iconfit\\tick.png")); // NOI18N
         Validate.setLabelFor(RightMenu);
         Validate.setText("Validate the order");
         Validate.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -340,11 +357,14 @@ public class ShoppingCartManagement extends javax.swing.JFrame {
         jPanel5.setLayout(jPanel5Layout);
         jPanel5Layout.setHorizontalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Validate, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 237, Short.MAX_VALUE)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(Validate, javax.swing.GroupLayout.DEFAULT_SIZE, 217, Short.MAX_VALUE)
+                .addContainerGap())
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Validate, javax.swing.GroupLayout.DEFAULT_SIZE, 40, Short.MAX_VALUE)
+            .addComponent(Validate, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         RightMenu.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 540, 237, 40));
@@ -353,6 +373,7 @@ public class ShoppingCartManagement extends javax.swing.JFrame {
 
         Delete.setFont(new java.awt.Font("Raleway", 1, 15)); // NOI18N
         Delete.setForeground(new java.awt.Color(255, 255, 255));
+        Delete.setIcon(new javax.swing.ImageIcon("C:\\Users\\mefta\\Videos\\Tek Up\\Semestre 2\\Java\\Projet Java\\Icon\\mini\\delete.png")); // NOI18N
         Delete.setLabelFor(RightMenu);
         Delete.setText("Delete this prodcuts");
         Delete.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -399,7 +420,7 @@ public class ShoppingCartManagement extends javax.swing.JFrame {
         });
         RightMenu.add(add, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 490, 50, 20));
 
-        getContentPane().add(RightMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 0, 740, 590));
+        getContentPane().add(RightMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 0, 730, 640));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
