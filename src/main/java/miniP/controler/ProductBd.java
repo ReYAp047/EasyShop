@@ -34,11 +34,24 @@ public class ProductBd {
                 PreparedStatement select = con1.prepareStatement("select * from product order by name");
            ResultSet rs =select.executeQuery();
           return rs;
-            
-            
-         
-        
         }
+        public static ResultSet ProductsName(String name) throws ClassNotFoundException, SQLException{
+            int c;
+            
+            Class.forName("com.mysql.cj.jdbc.Driver");   
+
+            String url = "jdbc:mysql://localhost:3306/ecommerce?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC"; 
+            String username = "root";
+            String password = "";
+                Connection con1 = DriverManager.getConnection(url, username, password);
+           
+                PreparedStatement select = con1.prepareStatement("select * from product where name=?");
+                select.setString(1, name);
+                ResultSet rs =select.executeQuery();
+          return rs;
+        }
+        
+        
 public static ResultSet allCategory() throws ClassNotFoundException, SQLException{
             int c;
             
@@ -67,7 +80,7 @@ public static ResultSet allProductsByCategory(String cat) throws ClassNotFoundEx
             String password = "";
                 Connection con1 = DriverManager.getConnection(url, username, password);
            
-                PreparedStatement select = con1.prepareStatement("select * from product where category=? order by name");
+                PreparedStatement select = con1.prepareStatement("select * from product where nameC=? order by name");
                 select.setString(1, cat);
                 ResultSet rs =select.executeQuery();
           return rs;
@@ -91,12 +104,22 @@ public static ResultSet allProductsByName(String filterName) throws ClassNotFoun
                 select.setString(1, "%"+filterName+"%");
                 ResultSet rs =select.executeQuery();
           return rs;
-            
-            
-         
-        
-        }
 
+        }
+    public static int UpdatAmount(String name, String amount) throws ClassNotFoundException, SQLException {
+           Class.forName("com.mysql.cj.jdbc.Driver");   
+
+            String url = "jdbc:mysql://localhost:3306/ecommerce?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC"; 
+            String username = "root";
+            String password = "";
+                Connection con1 = DriverManager.getConnection(url, username, password);
+           
+                PreparedStatement select = con1.prepareStatement("UPDATE `product` SET `amount`=? where `name`=?");
+                select.setString(1, amount); 
+                select.setString(2, name);
+                int rs =select.executeUpdate();
+          return rs;
+}
 
 
 }

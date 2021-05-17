@@ -26,11 +26,13 @@ public class Product {
     public Product() {
     }
 
-    public Product(String nom, String category, float prix, String description) {
+    public Product(String nom, String category, float prix, String description,int amoount) {
         this.name = nom;
         this.category = category;
         this.price = prix;
-        this.description = description; //To change body of generated methods, choose Tools | Templates.
+        this.description = description;
+        this.amoount = amoount;        
+//To change body of generated methods, choose Tools | Templates.
     }
 
     public int getIdP() {
@@ -73,7 +75,7 @@ public class Product {
         this.category = category;
     }
 
-    public void setPrice(int price) {
+    public void setPrice(float price) {
         this.price = price;
     }
 
@@ -92,12 +94,16 @@ public class Product {
         ResultSet rs = ProductBd.allProducts();
         return rs;
     }
+        public static ResultSet getProductsbyName(String name) throws ClassNotFoundException, SQLException {
+        ResultSet rs = ProductBd.ProductsName(name);
+        return rs;
+    }
         
         public static ResultSet getAllCtegory() throws ClassNotFoundException, SQLException {
         ResultSet rs = ProductBd.allCategory();
         return rs;
     }
-                public static ResultSet getProductsByCategory(String cat) throws ClassNotFoundException, SQLException {
+        public static ResultSet getProductsByCategory(String cat) throws ClassNotFoundException, SQLException {
         ResultSet rs = ProductBd.allProductsByCategory(cat);
         return rs;
     }
@@ -106,7 +112,10 @@ public class Product {
         ResultSet rs = ProductBd.allProductsByName(filterName);
         return rs;
     }
-                
+      public static int UpdatAmount(String name, String amount) throws ClassNotFoundException, SQLException{
+        int rs = ProductBd.UpdatAmount(name,amount);
+        return rs;
+    }           
         
     
     

@@ -102,9 +102,12 @@ public class Browse_Product extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Lato Hairline", 0, 22)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Shopping cart management");
+        jLabel2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel2MouseClicked(evt);
+            }
+        });
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(61, 227, -1, -1));
-
-        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\mefta\\Documents\\NetBeansProjects\\eCommerceProjet\\eCommerce\\src\\main\\java\\View\\Iconfit\\logo.png")); // NOI18N
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(21, 26, -1, -1));
 
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -114,40 +117,30 @@ public class Browse_Product extends javax.swing.JFrame {
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Order management");
         jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(62, 297, -1, -1));
-
-        jLabel6.setIcon(new javax.swing.ImageIcon("C:\\Users\\mefta\\Documents\\NetBeansProjects\\eCommerceProjet\\eCommerce\\src\\main\\java\\View\\Iconfit\\menu3.png")); // NOI18N
         jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 290, -1, -1));
 
         jLabel7.setFont(new java.awt.Font("Lato Hairline", 0, 22)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("Order history");
         jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(62, 367, -1, -1));
-
-        jLabel8.setIcon(new javax.swing.ImageIcon("C:\\Users\\mefta\\Documents\\NetBeansProjects\\eCommerceProjet\\eCommerce\\src\\main\\java\\View\\Iconfit\\menu4.png")); // NOI18N
         jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 360, -1, -1));
 
         jLabel9.setFont(new java.awt.Font("Lato Hairline", 0, 22)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setText("Contact Us");
         jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(62, 495, -1, -1));
-
-        jLabel10.setIcon(new javax.swing.ImageIcon("C:\\Users\\mefta\\Documents\\NetBeansProjects\\eCommerceProjet\\eCommerce\\src\\main\\java\\View\\Iconfit\\menu5.png")); // NOI18N
         jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 488, -1, -1));
 
         jLabel11.setFont(new java.awt.Font("Lato Hairline", 0, 22)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(255, 255, 255));
         jLabel11.setText("Log out");
         jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(62, 558, -1, -1));
-
-        jLabel12.setIcon(new javax.swing.ImageIcon("C:\\Users\\mefta\\Documents\\NetBeansProjects\\eCommerceProjet\\eCommerce\\src\\main\\java\\View\\Iconfit\\menu6.png")); // NOI18N
         jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 551, -1, -1));
 
         jLabel13.setFont(new java.awt.Font("Lato Hairline", 0, 22)); // NOI18N
         jLabel13.setForeground(new java.awt.Color(255, 255, 255));
         jLabel13.setText("Browse products");
         jPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(62, 157, -1, -1));
-
-        jLabel14.setIcon(new javax.swing.ImageIcon("C:\\Users\\mefta\\Documents\\NetBeansProjects\\eCommerceProjet\\eCommerce\\src\\main\\java\\View\\Iconfit\\menu1.png")); // NOI18N
         jPanel1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 150, -1, -1));
 
         jLabel15.setFont(new java.awt.Font("Palatino Linotype", 1, 25)); // NOI18N
@@ -174,8 +167,6 @@ public class Browse_Product extends javax.swing.JFrame {
 
         jPanel9.setBackground(new java.awt.Color(105, 149, 253));
         jPanel9.setOpaque(false);
-
-        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\mefta\\Documents\\NetBeansProjects\\eCommerceProjet\\eCommerce\\src\\main\\java\\View\\Iconfit\\menu2.png")); // NOI18N
 
         javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
         jPanel9.setLayout(jPanel9Layout);
@@ -282,8 +273,6 @@ public class Browse_Product extends javax.swing.JFrame {
         jLabel1.setAlignmentX(114.0F);
         jLabel1.setAlignmentY(50.0F);
         jPanel3.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 30, 110, -1));
-
-        jLabel16.setIcon(new javax.swing.ImageIcon("C:\\Users\\mefta\\Documents\\NetBeansProjects\\eCommerceProjet\\eCommerce\\src\\main\\java\\View\\Iconfit\\heart.png")); // NOI18N
         jPanel3.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 30, 30, 19));
 
         jLabel17.setBackground(new java.awt.Color(0, 0, 0));
@@ -330,7 +319,6 @@ public class Browse_Product extends javax.swing.JFrame {
         jLabel21.setAlignmentY(50.0F);
         jPanel3.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 220, 110, -1));
 
-        jLabel22.setIcon(new javax.swing.ImageIcon("C:\\Users\\mefta\\Documents\\NetBeansProjects\\eCommerceProjet\\eCommerce\\src\\main\\java\\View\\Iconfit\\loupe_1.png")); // NOI18N
         jLabel22.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel22MouseClicked(evt);
@@ -377,8 +365,12 @@ public class Browse_Product extends javax.swing.JFrame {
 
         jLabel24.setFont(new java.awt.Font("Raleway", 1, 15)); // NOI18N
         jLabel24.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel24.setIcon(new javax.swing.ImageIcon("C:\\Users\\mefta\\Documents\\NetBeansProjects\\eCommerceProjet\\eCommerce\\src\\main\\java\\View\\Iconfit\\tick.png")); // NOI18N
         jLabel24.setText("Validate purchases");
+        jLabel24.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel24MouseClicked(evt);
+            }
+        });
         jPanel6.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 214, 45));
 
         jPanel5.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
@@ -390,7 +382,6 @@ public class Browse_Product extends javax.swing.JFrame {
 
         jLabel25.setFont(new java.awt.Font("Raleway", 1, 15)); // NOI18N
         jLabel25.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel25.setIcon(new javax.swing.ImageIcon("C:\\Users\\mefta\\Documents\\NetBeansProjects\\eCommerceProjet\\eCommerce\\src\\main\\java\\View\\Iconfit\\by.png")); // NOI18N
         jLabel25.setText("Add to the shopping card ");
         jLabel25.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -405,12 +396,12 @@ public class Browse_Product extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1030, Short.MAX_VALUE)
+            .addGap(0, 1049, Short.MAX_VALUE)
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(5, 5, 5)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 333, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                     .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 710, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
@@ -444,7 +435,7 @@ public class Browse_Product extends javax.swing.JFrame {
                for(int i=1; i<=c ; i++){
                    
                    v2.add(rs.getString("name"));
-                   v2.add(rs.getString("category"));
+                   v2.add(rs.getString("nameC"));
                    v2.add(rs.getFloat("price"));
                    v2.add(rs.getString("description"));
                }
@@ -611,7 +602,7 @@ else{
         float  prix= (float) df.getValueAt(selectedIndex, 2);
         String description = (String) df.getValueAt(selectedIndex, 3);
         
-        Product p = new Product(nom,category,prix,description);
+        Product p = new Product(nom,category,prix,description,1);
         int i =Panier.ii;
         Panier.ii++;
         Panier.panier[i]=p;
@@ -620,6 +611,18 @@ else{
 }
 
     }//GEN-LAST:event_jLabel25MouseClicked
+
+    private void jLabel24MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel24MouseClicked
+ShoppingCartManagement a=new ShoppingCartManagement();
+a.setVisible(true);
+this.setVisible(false);        
+    }//GEN-LAST:event_jLabel24MouseClicked
+
+    private void jLabel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseClicked
+     ShoppingCartManagement a=new ShoppingCartManagement();
+a.setVisible(true);
+this.setVisible(false);      
+    }//GEN-LAST:event_jLabel2MouseClicked
 
     /**
      * @param args the command line arguments
