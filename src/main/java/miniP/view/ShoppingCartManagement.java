@@ -152,6 +152,11 @@ public class ShoppingCartManagement extends javax.swing.JFrame {
         jLabel5.setFont(new java.awt.Font("Lato Hairline", 0, 22)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Order management");
+        jLabel5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel5MouseClicked(evt);
+            }
+        });
         LeftMenu.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 300, -1, -1));
 
         jLabel6.setLabelFor(LeftMenu);
@@ -160,6 +165,11 @@ public class ShoppingCartManagement extends javax.swing.JFrame {
         jLabel7.setFont(new java.awt.Font("Lato Hairline", 0, 22)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("Order history");
+        jLabel7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel7MouseClicked(evt);
+            }
+        });
         LeftMenu.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 360, -1, -1));
 
         jLabel8.setLabelFor(LeftMenu);
@@ -173,7 +183,7 @@ public class ShoppingCartManagement extends javax.swing.JFrame {
                 jLabel9MouseClicked(evt);
             }
         });
-        LeftMenu.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 470, -1, -1));
+        LeftMenu.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 480, -1, -1));
 
         jLabel10.setLabelFor(LeftMenu);
         LeftMenu.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 435, -1, -1));
@@ -181,7 +191,12 @@ public class ShoppingCartManagement extends javax.swing.JFrame {
         jLabel11.setFont(new java.awt.Font("Lato Hairline", 0, 22)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(255, 255, 255));
         jLabel11.setText("Log out");
-        LeftMenu.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 520, -1, -1));
+        jLabel11.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel11MouseClicked(evt);
+            }
+        });
+        LeftMenu.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 530, -1, -1));
 
         jLabel12.setLabelFor(LeftMenu);
         LeftMenu.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 513, -1, -1));
@@ -532,6 +547,46 @@ public class ShoppingCartManagement extends javax.swing.JFrame {
         TableModel model = ScmTable.getModel();
         Amount.setText(model.getValueAt(i, 4).toString());
     }//GEN-LAST:event_ScmTableMouseClicked
+
+    private void jLabel5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel5MouseClicked
+             try {
+            
+            Order_Managment_Client a=new Order_Managment_Client();
+            a.setVisible(true);
+            this.setVisible(false);
+        } catch (ClassNotFoundException ex) {
+            Logger.getLogger(ShoppingCartManagement.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (SQLException ex) {
+            Logger.getLogger(ShoppingCartManagement.class.getName()).log(Level.SEVERE, null, ex);
+        } 
+    }//GEN-LAST:event_jLabel5MouseClicked
+
+    private void jLabel7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel7MouseClicked
+                     try {
+            
+            Order_History a=new Order_History();
+            a.setVisible(true);
+            this.setVisible(false);
+        } catch (ClassNotFoundException ex) {
+            Logger.getLogger(ShoppingCartManagement.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (SQLException ex) {
+            Logger.getLogger(ShoppingCartManagement.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_jLabel7MouseClicked
+
+    private void jLabel11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel11MouseClicked
+
+            globalUserLogin.userLogin="";
+            
+            ShoppingCartManagement c = new ShoppingCartManagement();
+            Sign_In si = new Sign_In();
+            
+            c.setVisible(false);
+            si.setVisible(true);
+            dispose();
+        
+             // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel11MouseClicked
 
     /**
      * @param args the command line arguments

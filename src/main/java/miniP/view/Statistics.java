@@ -468,7 +468,13 @@ public class Statistics extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Statistics().setVisible(true);
+                try {
+                    new Statistics().setVisible(true);
+                } catch (ClassNotFoundException ex) {
+                    Logger.getLogger(Statistics.class.getName()).log(Level.SEVERE, null, ex);
+                } catch (SQLException ex) {
+                    Logger.getLogger(Statistics.class.getName()).log(Level.SEVERE, null, ex);
+                }
             }
         });
     }

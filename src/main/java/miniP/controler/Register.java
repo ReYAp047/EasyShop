@@ -19,7 +19,7 @@ public class Register {
          
          Class.forName("com.mysql.cj.jdbc.Driver");
          
-         String url = "jdbc:mysql://localhost:3306/ecommerce?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC"; 
+         String url = "jdbc:mysql://localhost:3306/ecommerce2?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC"; 
             String username = "root";
             String passw = "";
             con1 = DriverManager.getConnection(url, username, passw);
@@ -44,7 +44,7 @@ public class Register {
          
          Class.forName("com.mysql.cj.jdbc.Driver");
          
-         String url = "jdbc:mysql://localhost:3306/ecommerce?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC"; 
+         String url = "jdbc:mysql://localhost:3306/ecommerce2?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC"; 
             String username = "root";
             String passw = "";
             con1 = DriverManager.getConnection(url, username, passw);
@@ -69,7 +69,7 @@ public class Register {
          
          Class.forName("com.mysql.cj.jdbc.Driver");
          
-         String url = "jdbc:mysql://localhost:3306/ecommerce?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC"; 
+         String url = "jdbc:mysql://localhost:3306/ecommerce2?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC"; 
             String username = "root";
             String passw = "";
             con1 = DriverManager.getConnection(url, username, passw);
@@ -95,7 +95,7 @@ public class Register {
          
          Class.forName("com.mysql.cj.jdbc.Driver");
          
-         String url = "jdbc:mysql://localhost:3306/ecommerce?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC"; 
+         String url = "jdbc:mysql://localhost:3306/ecommerce2?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC"; 
             String username = "root";
             String passw = "";
             con1 = DriverManager.getConnection(url, username, passw);
@@ -121,7 +121,7 @@ public class Register {
          
          Class.forName("com.mysql.cj.jdbc.Driver");
          
-         String url = "jdbc:mysql://localhost:3306/ecommerce?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC"; 
+         String url = "jdbc:mysql://localhost:3306/ecommerce2?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC"; 
             String username = "root";
             String passw = "";
             con1 = DriverManager.getConnection(url, username, passw);

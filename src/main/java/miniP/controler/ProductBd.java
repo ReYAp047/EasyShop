@@ -15,6 +15,7 @@ import java.util.Vector;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.table.DefaultTableModel;
+import miniP.model.globalUserLogin;
 
 /**
  *
@@ -26,7 +27,7 @@ public class ProductBd {
             
             Class.forName("com.mysql.cj.jdbc.Driver");   
 
-            String url = "jdbc:mysql://localhost:3306/ecommerce?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC"; 
+            String url = "jdbc:mysql://localhost:3306/ecommerce2?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC"; 
             String username = "root";
             String password = "";
                 Connection con1 = DriverManager.getConnection(url, username, password);
@@ -40,7 +41,7 @@ public class ProductBd {
             
             Class.forName("com.mysql.cj.jdbc.Driver");   
 
-            String url = "jdbc:mysql://localhost:3306/ecommerce?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC"; 
+            String url = "jdbc:mysql://localhost:3306/ecommerce2?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC"; 
             String username = "root";
             String password = "";
                 Connection con1 = DriverManager.getConnection(url, username, password);
@@ -57,7 +58,7 @@ public static ResultSet allCategory() throws ClassNotFoundException, SQLExceptio
             
             Class.forName("com.mysql.cj.jdbc.Driver");   
 
-            String url = "jdbc:mysql://localhost:3306/ecommerce?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC"; 
+            String url = "jdbc:mysql://localhost:3306/ecommerce2?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC"; 
             String username = "root";
             String password = "";
                 Connection con1 = DriverManager.getConnection(url, username, password);
@@ -75,7 +76,7 @@ public static ResultSet allProductsByCategory(String cat) throws ClassNotFoundEx
             
             Class.forName("com.mysql.cj.jdbc.Driver");   
 
-            String url = "jdbc:mysql://localhost:3306/ecommerce?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC"; 
+            String url = "jdbc:mysql://localhost:3306/ecommerce2?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC"; 
             String username = "root";
             String password = "";
                 Connection con1 = DriverManager.getConnection(url, username, password);
@@ -90,12 +91,56 @@ public static ResultSet allProductsByCategory(String cat) throws ClassNotFoundEx
         
         }
 
+public static ResultSet inProgress() throws ClassNotFoundException, SQLException{
+            int c;
+            
+            Class.forName("com.mysql.cj.jdbc.Driver");   
+
+            String url = "jdbc:mysql://localhost:3306/ecommerce2?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC"; 
+            String username = "root";
+            String password = "";
+                Connection con1 = DriverManager.getConnection(url, username, password);
+           
+                PreparedStatement select = con1.prepareStatement("select * from command where state_cmd<>? and login=? and state_cmd<>? order by date_cmd");
+                select.setString(1, "delivered");
+                select.setString(2, globalUserLogin.userLogin);
+                select.setString(3, "declined");
+                ResultSet rs =select.executeQuery();
+          return rs;
+            
+            
+         
+        
+        }
+
+public static ResultSet notInProgress() throws ClassNotFoundException, SQLException{
+            int c;
+            
+            Class.forName("com.mysql.cj.jdbc.Driver");   
+
+            String url = "jdbc:mysql://localhost:3306/ecommerce2?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC"; 
+            String username = "root";
+            String password = "";
+                Connection con1 = DriverManager.getConnection(url, username, password);
+           
+                PreparedStatement select = con1.prepareStatement("select * from command where state_cmd=? and login=? and state_cmd=? order by date_cmd");
+                select.setString(1, "delivered");
+                select.setString(2, globalUserLogin.userLogin);
+                select.setString(3, "declined");
+                ResultSet rs =select.executeQuery();
+          return rs;
+            
+            
+         
+        
+        }
+
 public static ResultSet allProductsByName(String filterName) throws ClassNotFoundException, SQLException{
             int c;
             
             Class.forName("com.mysql.cj.jdbc.Driver");   
 
-            String url = "jdbc:mysql://localhost:3306/ecommerce?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC"; 
+            String url = "jdbc:mysql://localhost:3306/ecommerce2?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC"; 
             String username = "root";
             String password = "";
                 Connection con1 = DriverManager.getConnection(url, username, password);
@@ -109,7 +154,7 @@ public static ResultSet allProductsByName(String filterName) throws ClassNotFoun
     public static int UpdatAmount(String name, String amount) throws ClassNotFoundException, SQLException {
            Class.forName("com.mysql.cj.jdbc.Driver");   
 
-            String url = "jdbc:mysql://localhost:3306/ecommerce?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC"; 
+            String url = "jdbc:mysql://localhost:3306/ecommerce2?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC"; 
             String username = "root";
             String password = "";
                 Connection con1 = DriverManager.getConnection(url, username, password);

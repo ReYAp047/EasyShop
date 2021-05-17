@@ -469,7 +469,13 @@ else{
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new orderManagment().setVisible(true);
+                try {
+                    new orderManagment().setVisible(true);
+                } catch (ClassNotFoundException ex) {
+                    Logger.getLogger(orderManagment.class.getName()).log(Level.SEVERE, null, ex);
+                } catch (SQLException ex) {
+                    Logger.getLogger(orderManagment.class.getName()).log(Level.SEVERE, null, ex);
+                }
             }
         });
     }

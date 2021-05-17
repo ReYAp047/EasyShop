@@ -99,6 +99,16 @@ public class Product {
         return rs;
     }
         
+        public static ResultSet getInProgress() throws ClassNotFoundException, SQLException {
+         ResultSet rs = ProductBd.inProgress();
+        return rs;
+    }
+                
+         public static ResultSet getNotInProgress() throws ClassNotFoundException, SQLException {
+         ResultSet rs = ProductBd.notInProgress();
+        return rs;
+    }
+        
         public static ResultSet getAllCtegory() throws ClassNotFoundException, SQLException {
         ResultSet rs = ProductBd.allCategory();
         return rs;

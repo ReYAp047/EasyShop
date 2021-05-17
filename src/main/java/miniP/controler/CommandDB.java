@@ -14,7 +14,7 @@ public class CommandDB {
         public static int AjoutProductsCommande(float prix,String date,String description,String idClient) throws SQLException, ClassNotFoundException{
            
             Class.forName("com.mysql.cj.jdbc.Driver"); 
-            String url = "jdbc:mysql://localhost:3306/ecommerce?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC"; 
+            String url = "jdbc:mysql://localhost:3306/ecommerce2?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC"; 
             String username = "root";
             String password = "";
                 Connection con1 = DriverManager.getConnection(url, username, password); 
@@ -33,7 +33,7 @@ public class CommandDB {
             
             Class.forName("com.mysql.cj.jdbc.Driver");   
 
-            String url = "jdbc:mysql://localhost:3306/ecommerce?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC"; 
+            String url = "jdbc:mysql://localhost:3306/ecommerce2?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC"; 
             String username = "root";
             String password = "";
                 Connection con1 = DriverManager.getConnection(url, username, password);
